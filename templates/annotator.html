@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>在线标注工具</title>
+    <style>
+        body { font-family: sans-serif; display: flex; flex-direction: column; align-items: center; }
+        #annotation-container { position: relative; border: 1px solid black; }
+        #image-canvas { display: block; }
+        #controls { margin-top: 15px; }
+        button { font-size: 16px; padding: 8px 15px; margin: 0 10px; }
+        #info { margin-top: 10px; font-size: 18px; }
+    </style>
+</head>
+<body>
+    <h1>在线标注工具</h1>
+    <div id="annotation-container">
+        <canvas id="image-canvas"></canvas>
+    </div>
+    <div id="controls">
+        <button id="prev-btn">上一张</button>
+        <button id="save-btn">保存并下一张</button>
+        <button id="next-btn">跳过</button>
+        <button id="clear-btn">清除框选</button>
+    </div>
+    <div id="info">
+        <p id="image-name"></p>
+        <p id="progress"></p>
+    </div>
+
+    <script src="/static/annotator.js"></script>
+</body>
+</html>
